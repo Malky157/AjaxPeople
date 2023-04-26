@@ -37,7 +37,7 @@ namespace Homework4._24.Web.Controllers
             var repo = new PeopleRepository(_connection);
             repo.UpdatePerson(person);
         }
-
+        [HttpPost]
         public void DeletePerson(int id)
         {
             var repo = new PeopleRepository(_connection);
